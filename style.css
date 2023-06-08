@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+nav{
+    box-shadow: #0087ab 0px 4px 6px 0px;
+    top: 0;
+    height: 93px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 1115px){
+    .learn-more{
+        display: none;
+    }
+    .sign-up{
+        float: right;
+    }
+
+    .img-contents{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+
+
+.left-icon{
+    display: flex;
+    padding: 12px 10px;
+    transition: 0,2s;
+    align-items: center;
+    width: 20%;
+    margin-left: 35px;
+    transition: 2s;
+}
+
+
+.logo{
+    display: flex;
+    animation-name: oc3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes oc3{
+    0%{
+        transform: rotate(-4deg);
+        transition: 1s;
+    }
+    25%{
+        transform: rotate(-3deg);
+        transition: 1s;
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+.left-text{
+    margin: 10px 10px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+.right-contents{
+    /* border: 1px solid blue; */
+    width: 1000px;
+    width: 39%;
+    padding: 35px 20px;
+    display: flex;
+    margin-left: 500px;
+}
+
+
+.content1{
+    display: flex;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+.content1 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+
+
+
+/* Dropdown start */
+.live-demo{
+    background-color: transparent;
+    color: white;
+    padding: 11px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #0087ab;
+    height: 10px;
+}
+
+.drop-down{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #0087ab;
+    color: white;
+    min-width: 158px;
+    margin-top: 11px;
+}
+.drop-down a{
+    padding: 12px 15px;
+    display: block;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    color: white;
+}
+
+.drop-down a:hover{
+    background-color: white;
+    color: #0087ab;
+}
+
+.content2:hover .drop-down{
+    display: block;
+    color: white;
+}
+.content2:hover .live-demo{
+    background-color: transparent;
+}
+/* Dropdown end */
+
+
+
+
+/* dropdown2 start */
+.demo-block{
+    background-color: transparent;
+    color: white;
+    padding: 2px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #0087ab;
+    height: 30px;
+    margin-bottom: 27px;
+}
+
+.dropdown2{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #0087ab;
+    color: white;
+    min-width: 158px;
+    margin-top: 27px;
+}
+.dropdown2 a{
+    padding: 12px 15px;
+    display: block;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    color: white;
+}
+.dropdown2 a:hover{
+    background-color: white;
+    color: #0087ab;
+}
+.content3:hover .dropdown2{
+    display: block;
+    color: white;
+}
+.content3:hover .demo-block{
+    background-color: transparent;
+}
+/* dropdown2 end */
+
+
+
+
+
+.content2 a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+
+.content3{
+    display: flex;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+
+.content3 a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.button{
+    box-shadow: #0087ab 0px 4px 6px 0px;
+    width: 100px;
+    padding: 0px 20px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    margin: 25px 45px;
+    transition: 1s;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover{
+    color: white;
+}
+
+
+.button:hover{
+    background-color: #0087ab;
+    color: white;
+    border: none;
+}
+
+.banner1-img{
+    padding: 260px 30px;
+    background-image:url(./img/woman-studying-book-while.jpg);
+    background-repeat: no-repeat;
+    background-position:90%;
+    background-size: cover;
+    height: 670px;
+}
+
+
+.img-contents{
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 300px;
+    padding: 20px 10px;
+}
+
+.img-contents h1{
+    font-size: 64px;
+    color: rgb(66, 57, 5);
+}
+
+.img-contents p{
+    color:rgb(66, 57, 5);
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.sign-up{
+    height: 40px;
+    width: 25%;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color:  #0087ab;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.sign-up:hover{
+    background-color: white;
+    color: #0087ab;
+}
+
+.learn-more{
+    height: 40px;
+    width: 15%;
+    border-radius: 5px;
+    color: #0087ab;
+    cursor: pointer;
+    margin: 20px 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: 2px solid #0087ab;
+    background: none;
+}
+
+.learn-more:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.banner-2{
+    /* border: 2px solid orangered; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+    padding: 80px 30px;
+}
+
+.banner2-text{
+    /* border: 2px solid blue; */
+    width: 50%;
+    height: 400px;
+    padding: 95px 25px;
+}
+
+.banner2-text h1{
+    font-size: 54px;
+    color:rgb(66, 57, 5);
+    margin-top: 20px;
+}
+
+.banner2-text p{
+    font-size: 20px;
+    color:rgb(66, 57, 5);
+    margin-top: 20px;
+}
+
+.banner2-text button{
+    height: 50px;
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color:#0087ab;
+    color: rgb(255, 253, 253);
+    border: none;
+    cursor: pointer;
+}
+
+.banner2-text button:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.huge-logo{
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 400px;
+}
+
+.huge-logo{
+    animation-name: king;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes king {
+    0%{
+        transform: rotate(1deg);
+    }
+    25%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
